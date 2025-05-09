@@ -1,0 +1,223 @@
+.button.primary:hover {
+    background-color: #0056b3;
+}
+
+.button.secondary {
+    background-color: #6c757d;
+}
+
+.button.secondary:hover {
+    background-color: #545b62;
+}
+
+.button.danger {
+    background-color: #dc3545;
+}
+
+.button.danger:hover {
+    background-color: #c82333;
+}
+
+.footer {
+    background-color: #000; /* Preto */
+    color: #f8f4f0; /* Creme claro */
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    font-size: 0.9rem;
+    margin-top: 2rem; /* Adicionado para separar do conteúdo */
+}
+
+.footer a {
+    color: #fff; /* Branco */
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+    opacity: 1;
+}
+
+.admin-page {
+    padding-top: 2rem;
+}
+
+.admin-page .admin-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.admin-page .admin-form label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.admin-page .admin-form input[type="text"],
+.admin-page .admin-form input[type="password"],
+.admin-page .admin-form input[type="file"],
+.admin-page .admin-form textarea {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.admin-page .grid {
+    margin-top: 1rem;
+}
+
+.admin-page .item {
+    text-align: center;
+}
+
+.admin-page .item img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+.admin-page .item .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.admin-page .item .edit-form label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.admin-page .item .edit-form input[type="text"],
+.admin-page .item .edit-form textarea,
+.admin-page .item .edit-form input[type="file"] {
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+.admin-page .item .delete-btn {
+    display: block;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Ajusta a altura */
+    padding-top: 0;
+}
+
+.login-page .login-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+}
+
+.login-page .login-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-page .login-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.login-page .login-form .form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.login-page .login-form .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+}
+
+.login-page .login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilos para telas menores (menu dropdown) */
+@media (max-width: 768px) {
+    .header {
+        padding: 1.5rem 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        z-index: 10;
+        display: none;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin-left: 0;
+        width: 100%;
+        border-bottom: 1px solid #222;
+    }
+
+    .nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .nav ul li a, .follow-btn {
+        display: block;
+        padding: 1rem 1.5rem;
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .follow-btn {
+        margin-top: 1rem;
+    }
+
+    .login-page {
+        padding-top: 2rem; /* Ajusta o padding no mobile também */
+        min-height: auto;
+    }
+}
