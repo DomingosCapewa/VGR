@@ -29,7 +29,11 @@ VGR é uma vitrine virtual desenvolvida para a loja **VGR_Bussines**, permitindo
 3. Inicie o servidor local:
    ```bash
    php -S localhost:8000
+
    ```
+## Screenshot
+![image](https://github.com/user-attachments/assets/b0c2fead-6aff-40a3-95ea-c7a90e7d4dd3)
+---
 
 ## 📜 Licença
 
